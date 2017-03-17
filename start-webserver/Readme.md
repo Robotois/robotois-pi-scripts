@@ -6,7 +6,7 @@ Este script se encarga de inicializar el webserver de robotois cada que la raspb
 
   - Necesita estar instalado en ```/etc/init.d/```
   - Cambiar los privilegios mediante ```sh chmod +x /etc/init.d/MyApp```
-  - Y que el path a la instalación de node sea correcta
+  - Saber el path de la instalación de node y que sea correcta
 
 License
 ----
