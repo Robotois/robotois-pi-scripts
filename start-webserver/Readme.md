@@ -4,9 +4,12 @@
 
 Este script se encarga de inicializar el webserver de robotois cada que la raspberry pi arranca.
 
-  - Necesita estar instalado en ```/etc/init.d/```
-  - Cambiar los privilegios mediante ```sh chmod +x /etc/init.d/MyApp```
-  - Saber el path de la instalación de node y que sea correcta
+  - Crear el archivo en ```/etc/init.d/robotois-service.sh```
+  - Validar que el script tenga la el path de la instalación de node correcta ```which node```
+  - Cambiar los privilegios mediante ```sudo chmod 755 /etc/init.d/robotois-service.sh```
+  - Para probar el script ```sh /etc/init.d/robotois-service.sh start/stop```
+  - Para hacerlo que corra al inicio ```$ sudo update-rc.d robotois-service.sh defaults```
+  - Para removerlo de correr al inicio ```$ sudo update-rc.d -f robotois-service.sh remove```
 
 License
 ----
@@ -14,4 +17,4 @@ License
 MIT
 
 
-**Free Software, Hell Yeah!**
+**Software Libre!**
