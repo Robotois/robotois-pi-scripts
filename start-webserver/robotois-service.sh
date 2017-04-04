@@ -15,9 +15,9 @@ export PATH=$PATH:/usr/bin
 export NODE_PATH=$NODE_PATH:/usr/bin/node
 
 case "$1" in
-start) exec forever start --sourceDir=/home/pi/Robotois/webserverpi --uid="webserverpi" -p /home/pi/Robotois/webserverpi index.js
+start) exec forever start --sourceDir=/home/pi/Robotois/webserverpi --uid="webserverpi" -p /home/pi/Robotois/webserverpi server.js
 ;; stop)
-exec forever stop --sourceDir=/home/pi/Robotois/webserverpi index.js
+exec forever stop --sourceDir=/home/pi/Robotois/webserverpi server.js
 ;;
 *)
 echo "Usage: /etc/init.d/robotois-service {start|stop}"
