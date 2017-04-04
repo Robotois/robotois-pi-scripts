@@ -11,6 +11,8 @@ Este script se encarga de inicializar el webserver de robotois cada que la raspb
   - Para hacerlo que corra al inicio ```$ sudo update-rc.d robotois-service.sh defaults```
   - Para removerlo de correr al inicio ```$ sudo update-rc.d -f robotois-service.sh remove```
 
+  - Para listar los procesos activos de node ```$ ps -xa | grep node```
+
 License
 ----
 
